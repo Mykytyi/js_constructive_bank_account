@@ -27,7 +27,6 @@ function Person(name, date, amount) {
 }
 
 Person.prototype.getInfo = function() {
-  console.log(`Name: ${this.name}, Age: ${this.age}, Amount: ${this.amount}$`);
   return `Name: ${this.name}, Age: ${this.age}, Amount: ${this.amount}$`;
 }
 
@@ -51,7 +50,6 @@ Person.prototype.getAccountHistory = function() {
   for (let item of this.accountHistory) {
     arrForInput.push(`${item.name}: ${item.amountOfMoney}$`);
   }
-  console.log(arrForInput);
   return this.accountHistory;
 }
 
